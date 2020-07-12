@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "aws-sdk": "^2.713.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "nodemon": "^2.0.4",
+    "uuidv4": "^6.1.1"
+  },
+  "name": "krapelin-upload",
+  "version": "1.0.0",
+  "description": "File upload backend",
+  "main": "index.js",
+  "author": "James Dindi <dindijjames@gmail.com>",
+  "license": "MIT"
+}
