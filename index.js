@@ -32,12 +32,13 @@ app.post('/upload', upload, (req, res) => {
     Body: req.file.buffer,
     Bucket: process.env.REACT_APP_BUCKET,
     Key: `${uuid()}.${fileType}`,
+    ContentType: req.file.mimetype,
     ACL: 'public-read'
   };
   
   s3.upload(params, (err, data) => {
     if (err) res.status(500).send(err);
-    else     res.status(200).send(data);
+    res.status(200).send(data);
   });
 })
 
